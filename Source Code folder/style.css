@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Yaldevi:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.03em;
+    font-family: 'Yaldevi', sans-serif;
+
+}
+nav{
+    background-color: rgba(12,2,37,255);
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.nav1{
+    
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+    padding: .5em .5em;
+    align-items: center;
+    background-color:  rgba(12,2,37,255);
+   
+}
+.nav1 ul  {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    justify-items: left;
+    width: 100%;
+}
+.nav1 ul  :hover{
+color: #e79bf3;
+font-size: .9em;
+}
+
+nav img{
+ width: 5em;
+ height: 5em;
+}
+
+.nav1 ul , .Contact-Info ul  {
+    display: flex;
+    list-style-type: none;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    color: white;
+
+
+} 
+.Contact-Info ul {
+    font-size: 1.5em;
+}
+
+
+.nav1 ul a ,.Contact-Info ul a{
+    color: white;
+}
+
+.nav1 i{
+    color: white;
+ display: none;   
+}
+
+header .home{
+    
+    background:linear-gradient(rgb(255,255,255,0.3),rgb(255,255,255,0.3) ), url(backg.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 4em 10em; 
+    color: white;
+   
+    
+
+}
+
+.home H1{
+text-align: center;
+font-size: 2.5em;
+opacity: 1 !important;
+color: white;
+}
+/* #info {
+    border: 2px solid red;
+}  */
+
+.service , .My-projects{
+    background-color: rgba(12,2,37,255) ;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 2em #d9ccff;
+    padding: 5em 0;
+    
+}
+.service h1 ,.My-projects h1 ,.Testimonials h1{
+    font-size: xx-large ;
+    margin: 0em .5em;
+}
+
+.service-item {
+    display: flex;
+    padding: 2em ;
+}
+.service1 .service-item-inner{
+background-color: #f5fbfd;
+border-radius: 2em;
+border : .2em solid #e79bf3;
+/* transition: 0.3s; */
+width: 90%;
+color:rgba(12,2,37,255)  ;
+}
+.service1 .service-item-inner :hover{
+    background-color: #e79bf3;
+    border-radius: 2.5em;
+    border : .2em solid #e79bf3;
+
+}
+
+.imgproject div img{
+border: 2px solid white;
+}
+.container{
+    padding: .5em .5em;
+   align-items: center;
+}
+.container h4{
+    font-size: 2em;
+    /* align-items: center;
+    font-weight: 700;
+    text-transform: capitalize; */
+}
+.icon-service {
+    text-align: center;
+  
+}
+.icon-service i{
+    font-size: xx-large;
+    margin-top: .5em;
+}
+
+.Contact-Info{
+    padding: 2em;
+}
+
+.social-links{
+    align-items:flex-end;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    padding: .5em;
+    width: 20%; 
+}
+
+
+.imgproject , .Testimonials-con{
+display: flex;
+    padding: 1.5em;
+    justify-content: space-between;
+
+ 
+}
+
+.Testimonials{
+    background-color: rgba(12,2,37,255);
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.Testimonials-con .img-testimonials {
+   padding: 15px;
+}
+
+
+.imgproject .img1,.img2 , .img3 {
+
+    flex: 3;
+    width: 100%;
+    height: auto;
+    max-width: 30em;
+}
+.imgproject .img2{
+    margin-top: 3em;
+}
+
+.My-projects{
+    background-color: rgba(12,2,37,255);
+  
+}
+
+/* skills */
+.rowskills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+.skills{
+    max-width: 100%;
+    flex: 0 0 100%;
+
+}
+.rowitem{
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+.info-skill{
+    border: none;
+    text-align: center;
+    border-radius: 30%;
+    background-color: #f5fbfd;
+    color:  rgba(12,2,37,255);
+    margin: .5em .5em;
+    padding: 1.3em 1.3em;
+    box-shadow: .5em .3em .6em .4em #e79bf3; 
+}
+
+.info-skill :hover{
+    border-radius: 30%;
+    padding: 1.2em 1.2em;
+
+}
+.info-skill i{
+    font-size: 2em;
+}
+
+.Education{
+    text-align: center;
+    border-radius: 50%;
+    padding: 2em;
+
+}
+hr{
+    border: .2em solid #e79bf3 ;
+}
+/* footer */
+.footer{
+    /* background-image: url("backg.png"); */
+    width: 100%;
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(12,2,37,255) ;
+    padding: 2em 2em;
+    color: white;
+}
+
+
+/* responsive mobile */
+@media only screen and (max-width:550px){
+    .nav1{
+        justify-content: space-between;
+        width:10%;
+    }
+    .nav1 ul li{
+        display: none;
+    }
+    .nav1 i{
+        display: flex;
+        align-items:flex-start;
+        color: white;
+    }
+    header .home{
+        height: 22em;
+
+    }
+    
+    
+    *{
+        font-size:small;
+    }
+    .home{
+        padding: .5em 1em !important;
+    }
+    .container h4{
+        font-size: small;
+    }
+    .service h1, .Testimonials h1{
+        font-size: medium;
+    }
+    .imgproject .img2{
+        margin-top: 1em;
+    }
+
+
+}
+
+@media only screen and (min-width:310px){
+   
+    header .home{
+        height: 27em;
+
+    }
+   .imgproject .img2{
+       margin-top: 1em;
+   }
+}
+@media only screen and (min-width:700px){
+
+    header .home{
+        height: 35em;
+
+    }
+}
+
