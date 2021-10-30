@@ -149,7 +149,7 @@ border: 2px solid white;
 }
 
  /* form */
- form {
+ .fo {
     display: grid;    
 }
 input, textarea{
