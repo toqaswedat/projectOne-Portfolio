@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+     <!-- nav bar -->
+     <nav>
+        <div>
+        <img src="logo.png" alt="logoImage">
+        </div>
+
+        <div class="nav1">
+            
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="service.html#serv">Service</a></li>
+                <li><a href="service.html#skill">Skills</a></li>
+                <li><a href="service.html#pro">Current Projects</a></li>
+                <!-- <li><a href="#">Testimonials</a></li> -->
+                <li><a href="#info">Contact Info</a></li>
+                <i class="fa-solid fa-bars"></i>
+            </ul>
+            
+
+        </div>
+    </nav>
+
+<hr>
+  <!-- contact info -->
+  <section class="continfo" id="info">
+    <h1 >Contact Info</h1>
+  <div class="Contact-Info">
+      <ul>
+          <li><a href="#">Call Me On<br>0777684953</a></li>
+          <li><a href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspE-Mail <br>Toqa.j.swedat@gmail.com</a></li>
+          <!-- <li><a href="https://github.com/toqaswedat">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/toqa-swedat/">Linkedin</a></li>
+          <li><a href="https://www.instagram.com/toqa_swedat97/">Instagram</a></li> -->
+      </ul>
+  </div>
+    
+ </section>
+
+<!-- Contact Form -->
+<section class="formCon">
+    <h1>Contact Form</h1>
+    <!-- contact form  -->
+    <div>
+    
+    <input type="text" class="nameform" placeholder="Name *"><br>
+    <input type="email" class="emailform" placeholder="Email *"><br>
+    <input type="text" class="subjectform" placeholder="Subject *"><br>
+    <textarea type="text" class="massageform" placeholder="Your Massage ... "></textarea><br>
+    <button type="submit" class="btnform"> Send Massage </button
+    
+</div>
+</section>
+
+    <hr>
+    <!-- footer -->
+    <footer>
+   
+        <div class="footer">
+
+           <div class="social-links">
+         
+               <a href="https://www.linkedin.com/in/toqa-swedat/" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="https://github.com/toqaswedat" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+               <a href="https://www.instagram.com/toqa_swedat97/"  rel="noopener" target="_blank"><i class="fa-brands fa-instagram-square"></i></a> 
+               <a href="https://web.facebook.com/profile.php?id=100025391623397"  rel="noopener" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+           </div>
+           <div class="nav1">
+           
+               <ul>
+                   <li><a href="index.html">Home </a></li>
+                   <li><a href="service.html">Service</a></li>
+                   <li><a href="service.html/#skill">Skills</a></li>
+                   <!-- <i class="fa-solid fa-angle-down"></i> -->
+               </ul>
+            <p>&copy; 2021 TOQA SWEDAT</p>
+        </div>     
+        </div>
+    </footer>
+
+
+
+    <script>
+    'use strict';
+
+
+let nameuser=document.querySelector(".nameform");
+let emailuser=document.querySelector(".emailform");
+let subjectuser=document.querySelector(".subjectform");
+let massageuser=document.querySelector(".massageform");
+let btnforme=document.querySelector(".btnform");
+console.log(nameuser.value)
+
+btnforme.addEventListener("click", function () {
+    var user = {nameuser:nameuser.value,emailuser:emailuser.value, subjectuser:subjectuser.value,massageuser:massageuser.value };
+    console.log(user)
+
+    localStorage.setItem(nameuser.value,JSON.stringify(user));
+} );
+
+
+    </script>
+
+</body>
+</html>

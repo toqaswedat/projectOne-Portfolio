@@ -9,6 +9,7 @@
     font-family: 'Yaldevi', sans-serif;
 
 }
+
 nav{
     background-color: rgba(12,2,37,255);
     display: flex;
@@ -74,9 +75,10 @@ header .home{
     background-size: cover;
     padding: 4em 10em; 
     color: white;
-   
-    
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .home H1{
@@ -89,17 +91,16 @@ color: white;
     border: 2px solid red;
 }  */
 
-.service , .My-projects{
+.service , .My-projects ,.about-me, .continfo ,.formCon, .row{
     background-color: rgba(12,2,37,255) ;
     color: white;
     transition: 0.3s;
     box-shadow: 2em #d9ccff;
-    padding: 5em 0;
     
 }
-.service h1 ,.My-projects h1 ,.Testimonials h1{
-    font-size: xx-large ;
-    margin: 0em .5em;
+.service h1 ,.My-projects h1 ,.Testimonials h1,.about-me h1, .continfo h1 ,.formCon h1{
+    font-size: xx-large !important;
+    margin: 0em .5em !important;
 }
 
 .service-item {
@@ -143,9 +144,41 @@ border: 2px solid white;
     margin-top: .5em;
 }
 
-.Contact-Info{
+.Contact-Info ,.about-meP{
     padding: 2em;
 }
+
+ /* form */
+ form {
+    display: grid;    
+}
+input, textarea{
+    width: 30%;
+    border-radius: 4px;
+    margin:  auto;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%;
+    margin: auto;
+
+}
+
+button:hover {
+    background-color: #45a049;
+} 
+
+
+
+
+
+
 
 .social-links{
     align-items:flex-end;
@@ -271,7 +304,8 @@ hr{
     }
     header .home{
         height: 22em;
-
+        align-items: center;
+        display: flex;
     }
     
     
@@ -281,10 +315,11 @@ hr{
     .home{
         padding: .5em 1em !important;
     }
+    }
     .container h4{
         font-size: small;
     }
-    .service h1, .Testimonials h1{
+    .service h1, .Testimonials h1 ,.continfo h1 ,.continfo h1 , .formCon h1{
         font-size: medium;
     }
     .imgproject .img2{
@@ -292,7 +327,7 @@ hr{
     }
 
 
-}
+
 
 @media only screen and (min-width:310px){
    
